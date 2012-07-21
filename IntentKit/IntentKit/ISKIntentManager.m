@@ -37,4 +37,17 @@
 	return nil;
 }
 
+- (NSArray *)installedAppsForIntent:(ISKIntent *)intent {
+	return [NSArray array];
+}
+
+- (void)setPerferedApp:(NSDictionary *)dictionary forType:(NSString *)type {
+	//
+}
+
+- (NSDictionary *)preferedAppForType:(NSString *)type {
+	return nil;
+}
+
+
 @end
