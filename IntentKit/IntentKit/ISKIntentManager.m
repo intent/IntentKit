@@ -9,9 +9,13 @@
 #import "ISKIntentManager.h"
 #import "IntentKit.h"
 
-@implementation ISKIntentManager {
-	
+@interface ISKIntentManager () {
+	NSString *_cachePath;
 }
+
+@end
+
+@implementation ISKIntentManager 
 
 +(ISKIntentManager *)sharedIntentManager {
 	static ISKIntentManager *sharedInstanceManager = nil;
@@ -20,6 +24,14 @@
 		sharedInstanceManager = [[self alloc] init];
 	});
 	return sharedInstanceManager;
+}
+
+-(id) init {
+	self = [super init];
+	if(self) {
+		
+	}
+	return self;
 }
 
 -(void)startIntentManager {
@@ -41,11 +53,11 @@
 	return [NSArray array];
 }
 
-- (void)setPerferedApp:(NSDictionary *)dictionary forType:(NSString *)type {
+- (void)setPerferredApp:(NSDictionary *)dictionary forType:(NSString *)type {
 	//
 }
 
-- (NSDictionary *)preferedAppForType:(NSString *)type {
+- (NSDictionary *)preferredAppForType:(NSString *)type {
 	return nil;
 }
 
