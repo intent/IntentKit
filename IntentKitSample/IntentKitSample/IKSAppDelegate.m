@@ -12,6 +12,8 @@
 
 @implementation IKSAppDelegate
 
+@synthesize window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -19,6 +21,9 @@
 	self.viewController = [[IKSViewController alloc] initWithNibName:@"IKSViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+	
+	[[ISKIntentManager sharedIntentManager] startIntentManager];
+	
     return YES;
 }
 
@@ -46,7 +51,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+	[[ISKIntentManager sharedIntentManager] stopIntentManager];
 }
 
 @end
