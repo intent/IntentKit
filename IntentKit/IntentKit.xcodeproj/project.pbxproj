@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9EE8CBE15BB27D30005E5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */; };
+		D9EE8CC415BB27D30005E5D7 /* IntentKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EE8CC315BB27D30005E5D7 /* IntentKit.m */; };
+		D9EE8CCB15BB3CC00005E5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9EE8CBA15BB27D30005E5D7 /* libIntentKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIntentKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9EE8CC115BB27D30005E5D7 /* IntentKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntentKit-Prefix.pch"; sourceTree = "<group>"; };
+		D9EE8CC215BB27D30005E5D7 /* IntentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentKit.h; sourceTree = "<group>"; };
+		D9EE8CC315BB27D30005E5D7 /* IntentKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentKit.m; sourceTree = "<group>"; };
+		D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9EE8CB715BB27D30005E5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EE8CCB15BB3CC00005E5D7 /* UIKit.framework in Frameworks */,
+				D9EE8CBE15BB27D30005E5D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9EE8CAF15BB27D30005E5D7 = {
+			isa = PBXGroup;
+			children = (
+				D9EE8CBF15BB27D30005E5D7 /* IntentKit */,
+				D9EE8CBC15BB27D30005E5D7 /* Frameworks */,
+				D9EE8CBB15BB27D30005E5D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9EE8CBB15BB27D30005E5D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE8CBA15BB27D30005E5D7 /* libIntentKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9EE8CBC15BB27D30005E5D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */,
+				D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9EE8CBF15BB27D30005E5D7 /* IntentKit */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE8CC215BB27D30005E5D7 /* IntentKit.h */,
+				D9EE8CC315BB27D30005E5D7 /* IntentKit.m */,
+				D9EE8CC015BB27D30005E5D7 /* Supporting Files */,
+			);
+			path = IntentKit;
+			sourceTree = "<group>";
+		};
+		D9EE8CC015BB27D30005E5D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE8CC115BB27D30005E5D7 /* IntentKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D9EE8CB815BB27D30005E5D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D9EE8CB915BB27D30005E5D7 /* IntentKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EE8CC715BB27D30005E5D7 /* Build configuration list for PBXNativeTarget "IntentKit" */;
+			buildPhases = (
+				D9EE8CB615BB27D30005E5D7 /* Sources */,
+				D9EE8CB715BB27D30005E5D7 /* Frameworks */,
+				D9EE8CB815BB27D30005E5D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentKit;
+			productName = IntentKit;
+			productReference = D9EE8CBA15BB27D30005E5D7 /* libIntentKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9EE8CB115BB27D30005E5D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "i'mhello";
+			};
+			buildConfigurationList = D9EE8CB415BB27D30005E5D7 /* Build configuration list for PBXProject "IntentKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D9EE8CAF15BB27D30005E5D7;
+			productRefGroup = D9EE8CBB15BB27D30005E5D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9EE8CB915BB27D30005E5D7 /* IntentKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9EE8CB615BB27D30005E5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EE8CC415BB27D30005E5D7 /* IntentKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D9EE8CC515BB27D30005E5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9EE8CC615BB27D30005E5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9EE8CC815BB27D30005E5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/IntentKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntentKit/IntentKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D9EE8CC915BB27D30005E5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/IntentKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntentKit/IntentKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9EE8CB415BB27D30005E5D7 /* Build configuration list for PBXProject "IntentKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EE8CC515BB27D30005E5D7 /* Debug */,
+				D9EE8CC615BB27D30005E5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EE8CC715BB27D30005E5D7 /* Build configuration list for PBXNativeTarget "IntentKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EE8CC815BB27D30005E5D7 /* Debug */,
+				D9EE8CC915BB27D30005E5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9EE8CB115BB27D30005E5D7 /* Project object */;
+}
