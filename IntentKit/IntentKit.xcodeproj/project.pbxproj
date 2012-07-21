@@ -260,6 +260,7 @@
 				D9EE8CC915BB27D30005E5D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
