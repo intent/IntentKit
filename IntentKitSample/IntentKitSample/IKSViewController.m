@@ -36,6 +36,8 @@
 	
 	ISKIntentPickerViewController *picker = [[ISKIntentPickerViewController alloc] initWithIntent:nil];
 	
+	[picker setDelegate:self];
+	
 	[self presentViewController:picker
 					   animated:YES
 					 completion:nil];
