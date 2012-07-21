@@ -32,24 +32,26 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
+																  style:UIBarButtonItemStyleDone
+																 target:self
+																 action:@selector(didSelectCancel)];
+	
+	[[self navigationItem] setRightBarButtonItem:cancelBtn];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark
 
 #pragma mark - Table view data source
 
