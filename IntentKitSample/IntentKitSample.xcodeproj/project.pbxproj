@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB0CC9AD15BB584E00B6C147 /* ISKIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CC9A415BB584E00B6C147 /* ISKIntent.m */; };
-		AB0CC9AE15BB584E00B6C147 /* ISKIntentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CC9A615BB584E00B6C147 /* ISKIntentListViewController.m */; };
-		AB0CC9AF15BB584E00B6C147 /* ISKIntentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CC9A815BB584E00B6C147 /* ISKIntentManager.m */; };
-		AB0CC9B015BB584E00B6C147 /* ISKIntentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CC9AA15BB584E00B6C147 /* ISKIntentPickerViewController.m */; };
-		AB0CC9B115BB584E00B6C147 /* ISKIntentViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0CC9AC15BB584E00B6C147 /* ISKIntentViewControllerViewController.m */; };
 		AB43C6A615BB51D300C3ABD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB43C6A515BB51D300C3ABD6 /* UIKit.framework */; };
 		AB43C6A815BB51D300C3ABD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB43C6A715BB51D300C3ABD6 /* Foundation.framework */; };
 		AB43C6AA15BB51D300C3ABD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB43C6A915BB51D300C3ABD6 /* CoreGraphics.framework */; };
@@ -20,21 +15,21 @@
 		AB43C6B615BB51D300C3ABD6 /* IKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B515BB51D300C3ABD6 /* IKSAppDelegate.m */; };
 		AB43C6B915BB51D300C3ABD6 /* IKSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */; };
 		AB43C6BC15BB51D300C3ABD6 /* IKSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB43C6BA15BB51D300C3ABD6 /* IKSViewController.xib */; };
+		D9AB8FC115BB5F1200C97943 /* libIntentKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AB8FBF15BB5F0000C97943 /* libIntentKit.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D9AB8FBE15BB5F0000C97943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9AB8FBA15BB5F0000C97943 /* IntentKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9EE8CBA15BB27D30005E5D7;
+			remoteInfo = IntentKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		AB0CC9A115BB584E00B6C147 /* IntentKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IntentKit-Prefix.pch"; path = "../IntentKit/IntentKit/IntentKit-Prefix.pch"; sourceTree = "<group>"; };
 		AB0CC9A215BB584E00B6C147 /* IntentKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntentKit.h; path = ../IntentKit/IntentKit/IntentKit.h; sourceTree = "<group>"; };
-		AB0CC9A315BB584E00B6C147 /* ISKIntent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISKIntent.h; path = ../IntentKit/IntentKit/ISKIntent.h; sourceTree = "<group>"; };
-		AB0CC9A415BB584E00B6C147 /* ISKIntent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISKIntent.m; path = ../IntentKit/IntentKit/ISKIntent.m; sourceTree = "<group>"; };
-		AB0CC9A515BB584E00B6C147 /* ISKIntentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISKIntentListViewController.h; path = ../IntentKit/IntentKit/ISKIntentListViewController.h; sourceTree = "<group>"; };
-		AB0CC9A615BB584E00B6C147 /* ISKIntentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISKIntentListViewController.m; path = ../IntentKit/IntentKit/ISKIntentListViewController.m; sourceTree = "<group>"; };
-		AB0CC9A715BB584E00B6C147 /* ISKIntentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISKIntentManager.h; path = ../IntentKit/IntentKit/ISKIntentManager.h; sourceTree = "<group>"; };
-		AB0CC9A815BB584E00B6C147 /* ISKIntentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISKIntentManager.m; path = ../IntentKit/IntentKit/ISKIntentManager.m; sourceTree = "<group>"; };
-		AB0CC9A915BB584E00B6C147 /* ISKIntentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISKIntentPickerViewController.h; path = ../IntentKit/IntentKit/ISKIntentPickerViewController.h; sourceTree = "<group>"; };
-		AB0CC9AA15BB584E00B6C147 /* ISKIntentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISKIntentPickerViewController.m; path = ../IntentKit/IntentKit/ISKIntentPickerViewController.m; sourceTree = "<group>"; };
-		AB0CC9AB15BB584E00B6C147 /* ISKIntentViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISKIntentViewControllerViewController.h; path = ../IntentKit/IntentKit/ISKIntentViewControllerViewController.h; sourceTree = "<group>"; };
-		AB0CC9AC15BB584E00B6C147 /* ISKIntentViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISKIntentViewControllerViewController.m; path = ../IntentKit/IntentKit/ISKIntentViewControllerViewController.m; sourceTree = "<group>"; };
 		AB43C6A115BB51D300C3ABD6 /* IntentKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntentKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB43C6A515BB51D300C3ABD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB43C6A715BB51D300C3ABD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +43,7 @@
 		AB43C6B715BB51D300C3ABD6 /* IKSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKSViewController.h; sourceTree = "<group>"; };
 		AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKSViewController.m; sourceTree = "<group>"; };
 		AB43C6BB15BB51D300C3ABD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IKSViewController.xib; sourceTree = "<group>"; };
+		D9AB8FBA15BB5F0000C97943 /* IntentKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IntentKit.xcodeproj; path = ../IntentKit/IntentKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AB8FC115BB5F1200C97943 /* libIntentKit.a in Frameworks */,
 				AB43C6A615BB51D300C3ABD6 /* UIKit.framework in Frameworks */,
 				AB43C6A815BB51D300C3ABD6 /* Foundation.framework in Frameworks */,
 				AB43C6AA15BB51D300C3ABD6 /* CoreGraphics.framework in Frameworks */,
@@ -67,18 +64,7 @@
 		AB0CC9A015BB584000B6C147 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				AB0CC9A115BB584E00B6C147 /* IntentKit-Prefix.pch */,
 				AB0CC9A215BB584E00B6C147 /* IntentKit.h */,
-				AB0CC9A315BB584E00B6C147 /* ISKIntent.h */,
-				AB0CC9A415BB584E00B6C147 /* ISKIntent.m */,
-				AB0CC9A515BB584E00B6C147 /* ISKIntentListViewController.h */,
-				AB0CC9A615BB584E00B6C147 /* ISKIntentListViewController.m */,
-				AB0CC9A715BB584E00B6C147 /* ISKIntentManager.h */,
-				AB0CC9A815BB584E00B6C147 /* ISKIntentManager.m */,
-				AB0CC9A915BB584E00B6C147 /* ISKIntentPickerViewController.h */,
-				AB0CC9AA15BB584E00B6C147 /* ISKIntentPickerViewController.m */,
-				AB0CC9AB15BB584E00B6C147 /* ISKIntentViewControllerViewController.h */,
-				AB0CC9AC15BB584E00B6C147 /* ISKIntentViewControllerViewController.m */,
 			);
 			name = Vendors;
 			sourceTree = "<group>";
@@ -104,6 +90,7 @@
 		AB43C6A415BB51D300C3ABD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9AB8FBA15BB5F0000C97943 /* IntentKit.xcodeproj */,
 				AB43C6A515BB51D300C3ABD6 /* UIKit.framework */,
 				AB43C6A715BB51D300C3ABD6 /* Foundation.framework */,
 				AB43C6A915BB51D300C3ABD6 /* CoreGraphics.framework */,
@@ -133,6 +120,14 @@
 				AB43C6B315BB51D300C3ABD6 /* IntentKitSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9AB8FBB15BB5F0000C97943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9AB8FBF15BB5F0000C97943 /* libIntentKit.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +170,28 @@
 			mainGroup = AB43C69615BB51D300C3ABD6;
 			productRefGroup = AB43C6A215BB51D300C3ABD6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D9AB8FBB15BB5F0000C97943 /* Products */;
+					ProjectRef = D9AB8FBA15BB5F0000C97943 /* IntentKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AB43C6A015BB51D300C3ABD6 /* IntentKitSample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D9AB8FBF15BB5F0000C97943 /* libIntentKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIntentKit.a;
+			remoteRef = D9AB8FBE15BB5F0000C97943 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB43C69F15BB51D300C3ABD6 /* Resources */ = {
@@ -202,11 +213,6 @@
 				AB43C6B215BB51D300C3ABD6 /* main.m in Sources */,
 				AB43C6B615BB51D300C3ABD6 /* IKSAppDelegate.m in Sources */,
 				AB43C6B915BB51D300C3ABD6 /* IKSViewController.m in Sources */,
-				AB0CC9AD15BB584E00B6C147 /* ISKIntent.m in Sources */,
-				AB0CC9AE15BB584E00B6C147 /* ISKIntentListViewController.m in Sources */,
-				AB0CC9AF15BB584E00B6C147 /* ISKIntentManager.m in Sources */,
-				AB0CC9B015BB584E00B6C147 /* ISKIntentPickerViewController.m in Sources */,
-				AB0CC9B115BB584E00B6C147 /* ISKIntentViewControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +258,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -270,7 +276,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

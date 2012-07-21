@@ -7,12 +7,13 @@
 //
 
 #import "IKSAppDelegate.h"
-
+#import "IntentKit.h"
 #import "IKSViewController.h"
 
 @implementation IKSAppDelegate
 
 @synthesize window;
+@synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
