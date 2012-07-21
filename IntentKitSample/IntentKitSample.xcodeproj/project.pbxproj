@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0CC99B15BB52DE00B6C147 /* libIntentKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0CC99A15BB52DE00B6C147 /* libIntentKit.a */; };
+		AB43C6A615BB51D300C3ABD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB43C6A515BB51D300C3ABD6 /* UIKit.framework */; };
+		AB43C6A815BB51D300C3ABD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB43C6A715BB51D300C3ABD6 /* Foundation.framework */; };
+		AB43C6AA15BB51D300C3ABD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB43C6A915BB51D300C3ABD6 /* CoreGraphics.framework */; };
+		AB43C6B015BB51D300C3ABD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB43C6AE15BB51D300C3ABD6 /* InfoPlist.strings */; };
+		AB43C6B215BB51D300C3ABD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B115BB51D300C3ABD6 /* main.m */; };
+		AB43C6B615BB51D300C3ABD6 /* IKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B515BB51D300C3ABD6 /* IKSAppDelegate.m */; };
+		AB43C6B915BB51D300C3ABD6 /* IKSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */; };
+		AB43C6BC15BB51D300C3ABD6 /* IKSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB43C6BA15BB51D300C3ABD6 /* IKSViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB0CC99A15BB52DE00B6C147 /* libIntentKit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libIntentKit.a; path = "../IntentKit/build/Release-iphoneos/libIntentKit.a"; sourceTree = "<group>"; };
+		AB0CC99D15BB52EB00B6C147 /* IntentKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntentKit.h; path = ../IntentKit/IntentKit/IntentKit.h; sourceTree = "<group>"; };
+		AB43C6A115BB51D300C3ABD6 /* IntentKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntentKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB43C6A515BB51D300C3ABD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB43C6A715BB51D300C3ABD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB43C6A915BB51D300C3ABD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB43C6AD15BB51D300C3ABD6 /* IntentKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntentKitSample-Info.plist"; sourceTree = "<group>"; };
+		AB43C6AF15BB51D300C3ABD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB43C6B115BB51D300C3ABD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB43C6B315BB51D300C3ABD6 /* IntentKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntentKitSample-Prefix.pch"; sourceTree = "<group>"; };
+		AB43C6B415BB51D300C3ABD6 /* IKSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKSAppDelegate.h; sourceTree = "<group>"; };
+		AB43C6B515BB51D300C3ABD6 /* IKSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKSAppDelegate.m; sourceTree = "<group>"; };
+		AB43C6B715BB51D300C3ABD6 /* IKSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKSViewController.h; sourceTree = "<group>"; };
+		AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKSViewController.m; sourceTree = "<group>"; };
+		AB43C6BB15BB51D300C3ABD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IKSViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB43C69E15BB51D300C3ABD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0CC99B15BB52DE00B6C147 /* libIntentKit.a in Frameworks */,
+				AB43C6A615BB51D300C3ABD6 /* UIKit.framework in Frameworks */,
+				AB43C6A815BB51D300C3ABD6 /* Foundation.framework in Frameworks */,
+				AB43C6AA15BB51D300C3ABD6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB43C69615BB51D300C3ABD6 = {
+			isa = PBXGroup;
+			children = (
+				AB0CC99D15BB52EB00B6C147 /* IntentKit.h */,
+				AB0CC99A15BB52DE00B6C147 /* libIntentKit.a */,
+				AB43C6AB15BB51D300C3ABD6 /* IntentKitSample */,
+				AB43C6A415BB51D300C3ABD6 /* Frameworks */,
+				AB43C6A215BB51D300C3ABD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB43C6A215BB51D300C3ABD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6A115BB51D300C3ABD6 /* IntentKitSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB43C6A415BB51D300C3ABD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6A515BB51D300C3ABD6 /* UIKit.framework */,
+				AB43C6A715BB51D300C3ABD6 /* Foundation.framework */,
+				AB43C6A915BB51D300C3ABD6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB43C6AB15BB51D300C3ABD6 /* IntentKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6B415BB51D300C3ABD6 /* IKSAppDelegate.h */,
+				AB43C6B515BB51D300C3ABD6 /* IKSAppDelegate.m */,
+				AB43C6B715BB51D300C3ABD6 /* IKSViewController.h */,
+				AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */,
+				AB43C6BA15BB51D300C3ABD6 /* IKSViewController.xib */,
+				AB43C6AC15BB51D300C3ABD6 /* Supporting Files */,
+			);
+			path = IntentKitSample;
+			sourceTree = "<group>";
+		};
+		AB43C6AC15BB51D300C3ABD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6AD15BB51D300C3ABD6 /* IntentKitSample-Info.plist */,
+				AB43C6AE15BB51D300C3ABD6 /* InfoPlist.strings */,
+				AB43C6B115BB51D300C3ABD6 /* main.m */,
+				AB43C6B315BB51D300C3ABD6 /* IntentKitSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB43C6A015BB51D300C3ABD6 /* IntentKitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB43C6BF15BB51D300C3ABD6 /* Build configuration list for PBXNativeTarget "IntentKitSample" */;
+			buildPhases = (
+				AB43C69D15BB51D300C3ABD6 /* Sources */,
+				AB43C69E15BB51D300C3ABD6 /* Frameworks */,
+				AB43C69F15BB51D300C3ABD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentKitSample;
+			productName = IntentKitSample;
+			productReference = AB43C6A115BB51D300C3ABD6 /* IntentKitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB43C69815BB51D300C3ABD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IKS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Intent;
+			};
+			buildConfigurationList = AB43C69B15BB51D300C3ABD6 /* Build configuration list for PBXProject "IntentKitSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB43C69615BB51D300C3ABD6;
+			productRefGroup = AB43C6A215BB51D300C3ABD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB43C6A015BB51D300C3ABD6 /* IntentKitSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB43C69F15BB51D300C3ABD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB43C6B015BB51D300C3ABD6 /* InfoPlist.strings in Resources */,
+				AB43C6BC15BB51D300C3ABD6 /* IKSViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB43C69D15BB51D300C3ABD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB43C6B215BB51D300C3ABD6 /* main.m in Sources */,
+				AB43C6B615BB51D300C3ABD6 /* IKSAppDelegate.m in Sources */,
+				AB43C6B915BB51D300C3ABD6 /* IKSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB43C6AE15BB51D300C3ABD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB43C6AF15BB51D300C3ABD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB43C6BA15BB51D300C3ABD6 /* IKSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB43C6BB15BB51D300C3ABD6 /* en */,
+			);
+			name = IKSViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB43C6BD15BB51D300C3ABD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB43C6BE15BB51D300C3ABD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB43C6C015BB51D300C3ABD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntentKitSample/IntentKitSample-Prefix.pch";
+				INFOPLIST_FILE = "IntentKitSample/IntentKitSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB43C6C115BB51D300C3ABD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntentKitSample/IntentKitSample-Prefix.pch";
+				INFOPLIST_FILE = "IntentKitSample/IntentKitSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB43C69B15BB51D300C3ABD6 /* Build configuration list for PBXProject "IntentKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB43C6BD15BB51D300C3ABD6 /* Debug */,
+				AB43C6BE15BB51D300C3ABD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB43C6BF15BB51D300C3ABD6 /* Build configuration list for PBXNativeTarget "IntentKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB43C6C015BB51D300C3ABD6 /* Debug */,
+				AB43C6C115BB51D300C3ABD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB43C69815BB51D300C3ABD6 /* Project object */;
+}
