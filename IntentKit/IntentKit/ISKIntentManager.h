@@ -9,6 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "IntentKit.h"
 
+@class ISKIntent;
+
 @interface ISKIntentManager(Private)
+
+- (NSArray *)installedAppsForIntent:(ISKIntent *)intent;
+
+- (void)setPerferedApp:(NSDictionary *)dictionary forType:(NSString *)type;
+
+- (NSDictionary *)preferedAppForType:(NSString *)type;
 
 @end
