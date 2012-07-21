@@ -59,6 +59,11 @@
 }
 
 - (NSArray *)installedAppsForIntent:(ISKIntent *)intent {
+	NSFileManager *manager = [NSFileManager defaultManager];
+	NSString *cacheFileName = [_cachePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.handlers",intent.type]];
+	if ([manager fileExistsAtPath:cacheFileName]){
+		return [NSArray arrayWithContentsOfFile:cacheFileName];
+	}
 	return [NSArray array];
 }
 
