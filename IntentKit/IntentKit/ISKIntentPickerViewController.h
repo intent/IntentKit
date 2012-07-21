@@ -7,4 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IntentKit.h"
 
+@interface ISKIntentPickerViewController(Private)
+
+@end
