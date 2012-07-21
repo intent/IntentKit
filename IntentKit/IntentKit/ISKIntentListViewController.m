@@ -7,11 +7,15 @@
 //
 
 #import "ISKIntentListViewController.h"
-#import "IntentKit.h"
+#import "ISKIntentManager.h"
 
 @interface ISKIntentListViewController () {
-	ISKIntent *_intent;
+	ISKIntent	*_intent;
+	NSArray		*_collection;
 }
+
+-(NSArray*) collection;
+-(ISKIntent*) intent;
 
 @end
 
@@ -41,6 +45,9 @@
 	
 	[self setTitle:NSLocalizedString(@"Intents",nil)];
 	
+	
+	;
+	
 }
 
 - (void)viewDidUnload
@@ -54,6 +61,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
 #pragma mark - actions
 -(void) didSelectCancel:(id) sender{
 	
@@ -65,11 +73,24 @@
 -(void) didSelectIntent:(ISKIntent*) aIntent{
 	if( [[[self navigationController] delegate] respondsToSelector:@selector(intentPickerViewController:didSelectToOpenIntent:withURL:)] ){
 		
-		[[(ISKIntentPickerViewController*)[self navigationController] delegate] intentPickerViewController:[self navigationController]
+		[[(ISKIntentPickerViewController*)[self navigationController] delegate] intentPickerViewController:(ISKIntentPickerViewController*)[self navigationController]
 																					 didSelectToOpenIntent:aIntent
 																								   withURL:nil];
 		
 	}
+}
+
+-(NSArray*) collection{
+	
+	if( !_collection ){
+		_collection = [[ISKIntentManager sharedIntentManager] installedAppsForIntent:[self intent]];
+	}
+	
+	return _collection;
+}
+
+-(ISKIntent*) intent{
+	return _intent;
 }
 
 #pragma mark - Table view data source
@@ -84,7 +105,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return [[self collection] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,7 +129,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+	
+	[self didSelectIntent:[[self collection] objectAtIndex:[indexPath row]]];
+	
 }
 
 @end
