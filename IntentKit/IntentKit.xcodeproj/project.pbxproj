@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D9EE8CBE15BB27D30005E5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */; };
-		D9EE8CC415BB27D30005E5D7 /* IntentKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EE8CC315BB27D30005E5D7 /* IntentKit.m */; };
 		D9EE8CCB15BB3CC00005E5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */; };
+		D9EE8CCE15BB41100005E5D7 /* ISKIntent.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EE8CCC15BB41100005E5D7 /* ISKIntent.h */; };
+		D9EE8CCF15BB41100005E5D7 /* ISKIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EE8CCD15BB41100005E5D7 /* ISKIntent.m */; };
+		D9EE8CD215BB41D40005E5D7 /* ISKIntentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EE8CD015BB41D40005E5D7 /* ISKIntentManager.h */; };
+		D9EE8CD315BB41D40005E5D7 /* ISKIntentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EE8CD115BB41D40005E5D7 /* ISKIntentManager.m */; };
+		D9EE8CDA15BB44320005E5D7 /* ISKIntentPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EE8CD815BB44320005E5D7 /* ISKIntentPickerViewController.h */; };
+		D9EE8CDB15BB44320005E5D7 /* ISKIntentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EE8CD915BB44320005E5D7 /* ISKIntentPickerViewController.m */; };
+		D9EE8CEF15BB48270005E5D7 /* ISKIntentListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EE8CED15BB48270005E5D7 /* ISKIntentListViewController.h */; };
+		D9EE8CF015BB48270005E5D7 /* ISKIntentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EE8CEE15BB48270005E5D7 /* ISKIntentListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,8 +24,15 @@
 		D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9EE8CC115BB27D30005E5D7 /* IntentKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntentKit-Prefix.pch"; sourceTree = "<group>"; };
 		D9EE8CC215BB27D30005E5D7 /* IntentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentKit.h; sourceTree = "<group>"; };
-		D9EE8CC315BB27D30005E5D7 /* IntentKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentKit.m; sourceTree = "<group>"; };
 		D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9EE8CCC15BB41100005E5D7 /* ISKIntent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISKIntent.h; sourceTree = "<group>"; };
+		D9EE8CCD15BB41100005E5D7 /* ISKIntent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISKIntent.m; sourceTree = "<group>"; };
+		D9EE8CD015BB41D40005E5D7 /* ISKIntentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISKIntentManager.h; sourceTree = "<group>"; };
+		D9EE8CD115BB41D40005E5D7 /* ISKIntentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISKIntentManager.m; sourceTree = "<group>"; };
+		D9EE8CD815BB44320005E5D7 /* ISKIntentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISKIntentPickerViewController.h; sourceTree = "<group>"; };
+		D9EE8CD915BB44320005E5D7 /* ISKIntentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISKIntentPickerViewController.m; sourceTree = "<group>"; };
+		D9EE8CED15BB48270005E5D7 /* ISKIntentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISKIntentListViewController.h; sourceTree = "<group>"; };
+		D9EE8CEE15BB48270005E5D7 /* ISKIntentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISKIntentListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +78,14 @@
 			isa = PBXGroup;
 			children = (
 				D9EE8CC215BB27D30005E5D7 /* IntentKit.h */,
-				D9EE8CC315BB27D30005E5D7 /* IntentKit.m */,
+				D9EE8CCC15BB41100005E5D7 /* ISKIntent.h */,
+				D9EE8CCD15BB41100005E5D7 /* ISKIntent.m */,
+				D9EE8CD015BB41D40005E5D7 /* ISKIntentManager.h */,
+				D9EE8CD115BB41D40005E5D7 /* ISKIntentManager.m */,
+				D9EE8CD815BB44320005E5D7 /* ISKIntentPickerViewController.h */,
+				D9EE8CD915BB44320005E5D7 /* ISKIntentPickerViewController.m */,
+				D9EE8CED15BB48270005E5D7 /* ISKIntentListViewController.h */,
+				D9EE8CEE15BB48270005E5D7 /* ISKIntentListViewController.m */,
 				D9EE8CC015BB27D30005E5D7 /* Supporting Files */,
 			);
 			path = IntentKit;
@@ -85,6 +106,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EE8CCE15BB41100005E5D7 /* ISKIntent.h in Headers */,
+				D9EE8CD215BB41D40005E5D7 /* ISKIntentManager.h in Headers */,
+				D9EE8CDA15BB44320005E5D7 /* ISKIntentPickerViewController.h in Headers */,
+				D9EE8CEF15BB48270005E5D7 /* ISKIntentListViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +139,9 @@
 		D9EE8CB115BB27D30005E5D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ISK;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "i'mhello";
+				ORGANIZATIONNAME = IntentKit;
 			};
 			buildConfigurationList = D9EE8CB415BB27D30005E5D7 /* Build configuration list for PBXProject "IntentKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -139,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9EE8CC415BB27D30005E5D7 /* IntentKit.m in Sources */,
+				D9EE8CCF15BB41100005E5D7 /* ISKIntent.m in Sources */,
+				D9EE8CD315BB41D40005E5D7 /* ISKIntentManager.m in Sources */,
+				D9EE8CDB15BB44320005E5D7 /* ISKIntentPickerViewController.m in Sources */,
+				D9EE8CF015BB48270005E5D7 /* ISKIntentListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

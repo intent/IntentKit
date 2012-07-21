@@ -3,7 +3,7 @@
 //  IntentKit
 //
 //  Created by Zac Bowling on 7/21/12.
-//  Copyright (c) 2012 i'mhello. All rights reserved.
+//  Copyright (c) 2012 IntentKit. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,20 +31,19 @@
 
 @end
 
+@class ISKIntentPickerViewController;
 
-@class ISKIntentViewController;
+@protocol ISKIntentPickerViewControllerDelegate <UINavigationControllerDelegate>
 
-@protocol ISKIntentViewControllerDelegate <NSObject>
-
--(void)intentViewController:(ISKIntentViewController *)controller didSelectToOpenIntent:(ISKIntent *)intent withURL:(NSURL *)url;
+-(void)intentPickerViewController:(ISKIntentPickerViewController *)controller didSelectToOpenIntent:(ISKIntent *)intent withURL:(NSURL *)url;
 
 @end
 
-@interface ISKIntentViewController : UIViewController
+@interface ISKIntentPickerViewController : UINavigationController
 
 -(id)initWithIntent:(ISKIntent *)intent;
 
-@property (assign,nonatomic) id<ISKIntentViewControllerDelegate> delegate;
+@property (assign,nonatomic) id<ISKIntentPickerViewControllerDelegate> delegate;
 
 @end
 
