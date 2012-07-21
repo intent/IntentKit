@@ -15,8 +15,8 @@
 
 - (NSArray *)installedAppsForIntent:(ISKIntent *)intent;
 
-- (void)setPerferedApp:(NSDictionary *)dictionary forType:(NSString *)type;
+- (void)setPerferredApp:(NSDictionary *)dictionary forType:(NSString *)type;
 
-- (NSDictionary *)preferedAppForType:(NSString *)type;
+- (NSDictionary *)preferredAppForType:(NSString *)type;
 
 @end
