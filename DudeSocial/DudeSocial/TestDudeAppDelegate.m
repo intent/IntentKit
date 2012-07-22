@@ -63,8 +63,8 @@
 			{
 				self.viewController.callbackURL = [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 			}
-			else {
-				self.viewController.textView.text = [variableKey isEqualToString:@"text"];
+			else if ([variableKey isEqualToString:@"text"]) {
+				self.viewController.textView.text = [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 			}
 		}
 	}

@@ -9,7 +9,7 @@
 #import "ISKIntentManager.h"
 #import "IntentKit.h"
 
-#define APIURLDomain @"http://fathomless-falls-4877.herokuapp.com"
+#define APIURLDomain @"http://www.intentkit.com/"
 
 @interface ISKIntentManager () {
 	NSString *_cachePath;
@@ -95,7 +95,7 @@
 	}
 	
 	NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:
-								 [NSString stringWithFormat:@"%@/intent?type=%@",APIURLDomain,[type stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]]];
+								 [NSString stringWithFormat:@"%@/intents.json?name=%@",APIURLDomain,[type stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]]];
 
 	NSURLResponse *response = nil;
 	NSError *error = nil;
@@ -161,7 +161,26 @@
 }
 
 + (NSURL *)URLForApp:(NSDictionary *)app withIntent:(ISKIntent *)intent {
-	NSString *URL = [app objectForKey:@"URL"];
+	NSString *name = [app objectForKey:@"name"];
+	
+	if ([name isEqualToString:@"Dude Social"]) {		
+		NSString *message = (__bridge_transfer NSString*)CFURLCreateStringByAddingPercentEscapes(
+															NULL,
+															(__bridge CFStringRef)[[intent parameters] objectForKey:@"message"],
+															NULL,
+															(__bridge CFStringRef)@"!*'();:@&=+$,/?%#[]",
+															kCFStringEncodingUTF8 );
+		return [NSURL URLWithString:[NSString stringWithFormat:@"dude://?text=%@&x-success=wikipedia:",message]];
+	} else if ([name isEqualToString:@"MyPrayPal"]){
+		NSString *message = (__bridge_transfer NSString*)CFURLCreateStringByAddingPercentEscapes(
+																								 NULL,
+																								 (__bridge CFStringRef)[[intent parameters] objectForKey:@"message"],
+																								 NULL,
+																								 (__bridge CFStringRef)@"!*'();:@&=+$,/?%#[]",
+																								 kCFStringEncodingUTF8 );
+		return [NSURL URLWithString:[NSString stringWithFormat:@"mypraypal://features/prayers;add?description=%@&category=Friends&status=Open&x-success=wikipedia:",message]];
+	}
+	
 	
 	
 	return nil;

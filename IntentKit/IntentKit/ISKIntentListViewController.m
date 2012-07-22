@@ -26,10 +26,15 @@
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
 		_intent = intent;
-		_apps = [NSArray arrayWithObject:[NSDictionary dictionaryWithObjectsAndKeys:
-										  @"My Prayer Pal",@"name",
+		_apps = [NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:
+										  @"MyPrayPal",@"name",
 										  @"Add a prayer to your prayer list",@"description"
-										  , nil]];
+										  , nil],
+				 [NSDictionary dictionaryWithObjectsAndKeys:
+				  @"Dude Social",@"name",
+				  @"Post message to \"The Dude\" social network",@"description"
+				  , nil],
+				 nil];
 		//[[ISKIntentManager sharedIntentManager] installedAppsForIntent:intent];
     }
     return self;
@@ -100,8 +105,7 @@
 	NSDictionary *app = [_apps objectAtIndex:indexPath.row];
 	
 	[self.delegate intentListViewController:self didSelectApp:app];
-	
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mypraypal://features/prayers;add?description=Example&category=Friends&status=Open"]];
+
 }
 
 @end
