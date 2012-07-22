@@ -44,6 +44,9 @@
 	
 	[self setTitle:NSLocalizedString(@"Intents",nil)];
 	
+	
+	;
+	
 }
 
 - (void)viewDidUnload
@@ -57,6 +60,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
 #pragma mark - actions
 -(void) didSelectCancel:(id) sender{
 	
@@ -65,14 +69,9 @@
 	
 }
 
--(void) didSelectIntent:(ISKIntent*) aIntent{
-	if( [[[self navigationController] delegate] respondsToSelector:@selector(intentPickerViewController:didSelectToOpenIntent:withURL:)] ){
-		
-		[[(ISKIntentPickerViewController*)[self navigationController] delegate] intentPickerViewController:[self navigationController]
-																					 didSelectToOpenIntent:aIntent
-																								   withURL:nil];
-		
-	}
+
+-(ISKIntent*) intent{
+	return _intent;
 }
 
 #pragma mark - Table view data source

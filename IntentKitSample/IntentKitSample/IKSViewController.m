@@ -7,7 +7,7 @@
 //
 
 #import "IKSViewController.h"
-#import "IntentKit.h"
+
 
 @interface IKSViewController ()
 
@@ -42,6 +42,12 @@
 					   animated:YES
 					 completion:nil];
 	
+}
+
+-(void)intentPickerViewController:(ISKIntentPickerViewController *)controller didSelectToOpenIntent:(ISKIntent *)intent withURL:(NSURL *)url{
+	
+	[controller dismissViewControllerAnimated:YES
+								   completion:nil];
 }
 
 @end

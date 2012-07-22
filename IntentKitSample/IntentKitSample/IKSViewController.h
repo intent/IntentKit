@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IKSViewController : UIViewController
+@interface IKSViewController : UIViewController<ISKIntentPickerViewControllerDelegate>
 
 - (IBAction)showPicker:(id)sender;
 
