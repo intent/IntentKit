@@ -19,7 +19,8 @@
 
 @implementation ISKIntentManager 
 
-+(ISKIntentManager *)sharedIntentManager {
++(ISKIntentManager *)sharedIntentManager
+{
 	static ISKIntentManager *sharedInstanceManager = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
@@ -28,7 +29,8 @@
 	return sharedInstanceManager;
 }
 
--(id) init {
+-(id) init
+{
 	self = [super init];
 	if(self) {
 		_cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
@@ -70,7 +72,7 @@
 }
 
 - (void)setPerferredApp:(NSDictionary *)dictionary forType:(NSString *)type {
-	//
+	
 }
 
 - (NSDictionary *)preferredAppForType:(NSString *)type {
@@ -85,7 +87,11 @@
 	NSString *cacheFileName = [_cachePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.handlers",type]];
 	
 	if ([manager fileExistsAtPath:cacheFileName]){
-		return [NSArray arrayWithContentsOfFile:cacheFileName];
+		NSError *error =nil;
+		NSDictionary *fileAttribs = [manager attributesOfItemAtPath:cacheFileName error:&error];
+		if ([[NSDate date] timeIntervalSinceDate:[fileAttribs fileCreationDate]] < 60 * 60 * 6) {
+			return [NSArray arrayWithContentsOfFile:cacheFileName];
+		}
 	}
 	
 	NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:
@@ -95,7 +101,18 @@
 	NSError *error = nil;
 	NSData *responseData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
 	
+	if (!responseData)
+	{
+		if ([manager fileExistsAtPath:cacheFileName])
+		{
+			return [NSArray arrayWithContentsOfFile:cacheFileName]; //return stale data.
+		}
+		return [NSArray array]; 
+	}
+	
 	NSArray *prefixes = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
+	if (!prefixes)
+		return [NSArray array];
 	
 	[prefixes writeToFile:cacheFileName atomically:YES];
 	
@@ -112,9 +129,12 @@
 	NSMutableArray *appDatas = nil;
 	
 	if ([manager fileExistsAtPath:cacheFileName]) {
+
 		appDatas = [NSMutableArray arrayWithContentsOfFile:cacheFileName];
+
 	}
-	else {
+	
+	if (!appDatas){
 		appDatas = [NSMutableArray arrayWithCapacity:3];
 	}
 	
@@ -138,6 +158,13 @@
 	
 	[appDatas writeToFile:cacheFileName atomically:YES];
 	
+}
+
++ (NSURL *)URLForApp:(NSDictionary *)app withIntent:(ISKIntent *)intent {
+	NSString *URL = [app objectForKey:@"URL"];
+	
+	
+	return nil;
 }
 
 

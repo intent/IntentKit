@@ -15,6 +15,7 @@
 		AB43C6B615BB51D300C3ABD6 /* IKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B515BB51D300C3ABD6 /* IKSAppDelegate.m */; };
 		AB43C6B915BB51D300C3ABD6 /* IKSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */; };
 		AB43C6BC15BB51D300C3ABD6 /* IKSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB43C6BA15BB51D300C3ABD6 /* IKSViewController.xib */; };
+		D989680D15BBFE5A00279F53 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = D989680C15BBFE5A00279F53 /* SampleData.json */; };
 		D9AB8FC115BB5F1200C97943 /* libIntentKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AB8FBF15BB5F0000C97943 /* libIntentKit.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		AB43C6B715BB51D300C3ABD6 /* IKSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKSViewController.h; sourceTree = "<group>"; };
 		AB43C6B815BB51D300C3ABD6 /* IKSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKSViewController.m; sourceTree = "<group>"; };
 		AB43C6BB15BB51D300C3ABD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IKSViewController.xib; sourceTree = "<group>"; };
+		D989680C15BBFE5A00279F53 /* SampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
 		D9AB8FBA15BB5F0000C97943 /* IntentKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IntentKit.xcodeproj; path = ../IntentKit/IntentKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				AB43C6AE15BB51D300C3ABD6 /* InfoPlist.strings */,
 				AB43C6B115BB51D300C3ABD6 /* main.m */,
 				AB43C6B315BB51D300C3ABD6 /* IntentKitSample-Prefix.pch */,
+				D989680C15BBFE5A00279F53 /* SampleData.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				AB43C6B015BB51D300C3ABD6 /* InfoPlist.strings in Resources */,
 				AB43C6BC15BB51D300C3ABD6 /* IKSViewController.xib in Resources */,
+				D989680D15BBFE5A00279F53 /* SampleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

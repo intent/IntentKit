@@ -1,0 +1,22 @@
+{
+	"apps":
+	[{
+		created_at: "2012-07-21T23:03:56Z",
+		description: "Flickr is a photo sharing app.",
+		id: 1,
+		name: "Flickr",
+		updated_at: "2012-07-21T23:03:56Z",
+		url_prefix: "flickr://"
+	 },
+	 {
+		 created_at: "2012-07-22T00:52:20Z",
+		 description: "Photo editing app",
+		 id: 2,
+		 name: "Camera+",
+		 updated_at: "2012-07-22T00:52:20Z",
+		 url_prefix: "camera-plus://"
+	 }]
+	,
+	
+	
+}

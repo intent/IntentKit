@@ -34,18 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-	UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
-																  style:UIBarButtonItemStyleDone
-																 target:self
-																 action:@selector(didSelectCancel:)];
-	
-	[[self navigationItem] setRightBarButtonItem:cancelBtn];
 	
 	[self setTitle:NSLocalizedString(@"Intents",nil)];
-	
-	
-	;
 	
 }
 
@@ -58,15 +48,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-
-#pragma mark - actions
--(void) didSelectCancel:(id) sender{
-	
-	[self  dismissViewControllerAnimated:YES
-							  completion:nil];
-	
 }
 
 

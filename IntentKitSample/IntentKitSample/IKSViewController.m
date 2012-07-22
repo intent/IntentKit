@@ -9,7 +9,9 @@
 #import "IKSViewController.h"
 
 
-@interface IKSViewController ()
+@interface IKSViewController () {
+	ISKIntentPickerViewController *picker;
+}
 
 @end
 
@@ -33,14 +35,22 @@
 }
 
 - (IBAction)showPicker:(id)sender {
+	NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"my awesome data",@"message",nil];
+	ISKIntent* intent = [[ISKIntent alloc] initWithType:@"share" parameters:dictionary];
 	
-	ISKIntentPickerViewController *picker = [[ISKIntentPickerViewController alloc] initWithIntent:nil];
-	
-	[picker setDelegate:self];
-	
-	[self presentViewController:picker
-					   animated:YES
-					 completion:nil];
+	NSURL *url = [[ISKIntentManager sharedIntentManager] defaultURLForIntent:intent];
+	if (!url) {
+		picker = [[ISKIntentPickerViewController alloc] initWithIntent:intent];
+		
+		[picker setDelegate:self];
+		
+		[self presentViewController:picker
+						   animated:YES
+						 completion:nil];
+	}
+	else {
+		[[UIApplication sharedApplication] openURL:url];
+	}
 	
 }
 
@@ -48,6 +58,15 @@
 	
 	[controller dismissViewControllerAnimated:YES
 								   completion:nil];
+	picker = nil;
+	
+	[[UIApplication sharedApplication] openURL:url];
+}
+
+-(void)intentPickerViewControllerDidCancel:(ISKIntentPickerViewController *)controller {
+	[controller dismissViewControllerAnimated:YES
+								   completion:nil];
+	picker = nil;
 }
 
 @end

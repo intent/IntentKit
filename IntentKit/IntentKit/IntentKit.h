@@ -37,8 +37,6 @@
 
 -(void)intentPickerViewController:(ISKIntentPickerViewController *)controller didSelectToOpenIntent:(ISKIntent *)intent withURL:(NSURL *)url;
 
-@optional
-
 -(void)intentPickerViewControllerDidCancel:(ISKIntentPickerViewController *)controller;
 
 @end

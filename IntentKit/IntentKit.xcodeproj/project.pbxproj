@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D965F05515BBE0930065955A /* Resources.c in Sources */ = {isa = PBXBuildFile; fileRef = D965F05415BBE0930065955A /* Resources.c */; };
 		D9EE8CBE15BB27D30005E5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */; };
 		D9EE8CCB15BB3CC00005E5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */; };
 		D9EE8CCE15BB41100005E5D7 /* ISKIntent.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EE8CCC15BB41100005E5D7 /* ISKIntent.h */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D965F05415BBE0930065955A /* Resources.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Resources.c; sourceTree = "<group>"; };
 		D9EE8CBA15BB27D30005E5D7 /* libIntentKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIntentKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9EE8CC115BB27D30005E5D7 /* IntentKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntentKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				D9EE8CD915BB44320005E5D7 /* ISKIntentPickerViewController.m */,
 				D9EE8CED15BB48270005E5D7 /* ISKIntentListViewController.h */,
 				D9EE8CEE15BB48270005E5D7 /* ISKIntentListViewController.m */,
+				D965F05415BBE0930065955A /* Resources.c */,
 				D9EE8CC015BB27D30005E5D7 /* Supporting Files */,
 			);
 			path = IntentKit;
@@ -169,6 +172,7 @@
 				D9EE8CD315BB41D40005E5D7 /* ISKIntentManager.m in Sources */,
 				D9EE8CDB15BB44320005E5D7 /* ISKIntentPickerViewController.m in Sources */,
 				D9EE8CF015BB48270005E5D7 /* ISKIntentListViewController.m in Sources */,
+				D965F05515BBE0930065955A /* Resources.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

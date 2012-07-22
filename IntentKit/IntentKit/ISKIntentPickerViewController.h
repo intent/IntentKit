@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "IntentKit.h"
+#import "ISKIntentListViewController.h"
 
-@interface ISKIntentPickerViewController(Private)
+@interface ISKIntentPickerViewController(Private)<ISKIntentListViewControllerDelegate>
 
 @end
