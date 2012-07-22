@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D989682015BC8FBF00279F53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D989681F15BC8FBF00279F53 /* UIKit.framework */; };
+		D989682215BC8FBF00279F53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D989682115BC8FBF00279F53 /* Foundation.framework */; };
+		D989682415BC8FBF00279F53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D989682315BC8FBF00279F53 /* CoreGraphics.framework */; };
+		D989682A15BC8FBF00279F53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D989682815BC8FBF00279F53 /* InfoPlist.strings */; };
+		D989682C15BC8FBF00279F53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D989682B15BC8FBF00279F53 /* main.m */; };
+		D989683015BC8FBF00279F53 /* TestDudeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D989682F15BC8FBF00279F53 /* TestDudeAppDelegate.m */; };
+		D989683315BC8FBF00279F53 /* TestDudeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D989683215BC8FBF00279F53 /* TestDudeViewController.m */; };
+		D989683615BC8FBF00279F53 /* TestDudeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D989683415BC8FBF00279F53 /* TestDudeViewController.xib */; };
+		D989683D15BC90BE00279F53 /* dude.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D989683C15BC90BE00279F53 /* dude.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D989681B15BC8FBF00279F53 /* DudeSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DudeSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D989681F15BC8FBF00279F53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D989682115BC8FBF00279F53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D989682315BC8FBF00279F53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D989682715BC8FBF00279F53 /* DudeSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DudeSocial-Info.plist"; sourceTree = "<group>"; };
+		D989682915BC8FBF00279F53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D989682B15BC8FBF00279F53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D989682D15BC8FBF00279F53 /* DudeSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DudeSocial-Prefix.pch"; sourceTree = "<group>"; };
+		D989682E15BC8FBF00279F53 /* TestDudeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDudeAppDelegate.h; sourceTree = "<group>"; };
+		D989682F15BC8FBF00279F53 /* TestDudeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDudeAppDelegate.m; sourceTree = "<group>"; };
+		D989683115BC8FBF00279F53 /* TestDudeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDudeViewController.h; sourceTree = "<group>"; };
+		D989683215BC8FBF00279F53 /* TestDudeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDudeViewController.m; sourceTree = "<group>"; };
+		D989683515BC8FBF00279F53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TestDudeViewController.xib; sourceTree = "<group>"; };
+		D989683C15BC90BE00279F53 /* dude.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dude.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D989681815BC8FBF00279F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D989682015BC8FBF00279F53 /* UIKit.framework in Frameworks */,
+				D989682215BC8FBF00279F53 /* Foundation.framework in Frameworks */,
+				D989682415BC8FBF00279F53 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D989681015BC8FBF00279F53 = {
+			isa = PBXGroup;
+			children = (
+				D989682515BC8FBF00279F53 /* DudeSocial */,
+				D989681E15BC8FBF00279F53 /* Frameworks */,
+				D989681C15BC8FBF00279F53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D989681C15BC8FBF00279F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D989681B15BC8FBF00279F53 /* DudeSocial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D989681E15BC8FBF00279F53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D989681F15BC8FBF00279F53 /* UIKit.framework */,
+				D989682115BC8FBF00279F53 /* Foundation.framework */,
+				D989682315BC8FBF00279F53 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D989682515BC8FBF00279F53 /* DudeSocial */ = {
+			isa = PBXGroup;
+			children = (
+				D989682E15BC8FBF00279F53 /* TestDudeAppDelegate.h */,
+				D989682F15BC8FBF00279F53 /* TestDudeAppDelegate.m */,
+				D989683115BC8FBF00279F53 /* TestDudeViewController.h */,
+				D989683215BC8FBF00279F53 /* TestDudeViewController.m */,
+				D989683415BC8FBF00279F53 /* TestDudeViewController.xib */,
+				D989682615BC8FBF00279F53 /* Supporting Files */,
+			);
+			path = DudeSocial;
+			sourceTree = "<group>";
+		};
+		D989682615BC8FBF00279F53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D989683C15BC90BE00279F53 /* dude.jpeg */,
+				D989682715BC8FBF00279F53 /* DudeSocial-Info.plist */,
+				D989682815BC8FBF00279F53 /* InfoPlist.strings */,
+				D989682B15BC8FBF00279F53 /* main.m */,
+				D989682D15BC8FBF00279F53 /* DudeSocial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D989681A15BC8FBF00279F53 /* DudeSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D989683915BC8FBF00279F53 /* Build configuration list for PBXNativeTarget "DudeSocial" */;
+			buildPhases = (
+				D989681715BC8FBF00279F53 /* Sources */,
+				D989681815BC8FBF00279F53 /* Frameworks */,
+				D989681915BC8FBF00279F53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DudeSocial;
+			productName = DudeSocial;
+			productReference = D989681B15BC8FBF00279F53 /* DudeSocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D989681215BC8FBF00279F53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TestDude;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = TestDude;
+			};
+			buildConfigurationList = D989681515BC8FBF00279F53 /* Build configuration list for PBXProject "DudeSocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D989681015BC8FBF00279F53;
+			productRefGroup = D989681C15BC8FBF00279F53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D989681A15BC8FBF00279F53 /* DudeSocial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D989681915BC8FBF00279F53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D989682A15BC8FBF00279F53 /* InfoPlist.strings in Resources */,
+				D989683615BC8FBF00279F53 /* TestDudeViewController.xib in Resources */,
+				D989683D15BC90BE00279F53 /* dude.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D989681715BC8FBF00279F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D989682C15BC8FBF00279F53 /* main.m in Sources */,
+				D989683015BC8FBF00279F53 /* TestDudeAppDelegate.m in Sources */,
+				D989683315BC8FBF00279F53 /* TestDudeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D989682815BC8FBF00279F53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D989682915BC8FBF00279F53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D989683415BC8FBF00279F53 /* TestDudeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D989683515BC8FBF00279F53 /* en */,
+			);
+			name = TestDudeViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D989683715BC8FBF00279F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D989683815BC8FBF00279F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D989683A15BC8FBF00279F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DudeSocial/DudeSocial-Prefix.pch";
+				INFOPLIST_FILE = "DudeSocial/DudeSocial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D989683B15BC8FBF00279F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DudeSocial/DudeSocial-Prefix.pch";
+				INFOPLIST_FILE = "DudeSocial/DudeSocial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D989681515BC8FBF00279F53 /* Build configuration list for PBXProject "DudeSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D989683715BC8FBF00279F53 /* Debug */,
+				D989683815BC8FBF00279F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D989683915BC8FBF00279F53 /* Build configuration list for PBXNativeTarget "DudeSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D989683A15BC8FBF00279F53 /* Debug */,
+				D989683B15BC8FBF00279F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D989681215BC8FBF00279F53 /* Project object */;
+}
