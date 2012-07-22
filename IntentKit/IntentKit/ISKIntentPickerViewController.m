@@ -10,7 +10,7 @@
 #import "ISKIntentListViewController.h"
 #import "IntentKit.h"
 #import "ISKIntentManager.h"
-
+#import "ISKAppWebViewController.h"
 extern const unsigned long ISKNavBarPng2x_size;
 extern const unsigned char ISKNavBarPng2x[];
 extern const unsigned long ISKNavBarPng_size;
@@ -40,6 +40,7 @@ extern const unsigned char ISKNavBarPng[];
 			[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
 														  target:self
 														  action:@selector(doCancel:)];
+        _listViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More" style:UIBarButtonItemStylePlain target:self action:@selector(doMore:)];
 		
 		UIImage *navBackground = nil;
 		
@@ -83,6 +84,15 @@ extern const unsigned char ISKNavBarPng[];
 -(void)doCancel:(id)sender 
 {
 	[self.delegate intentPickerViewControllerDidCancel:self];
+}
+
+-(void) doMore:(id)sender
+{
+    NSLog(@"More pressed!");
+    ISKAppWebViewController *appViewController = [[ISKAppWebViewController alloc] initWithNibName:nil bundle:nil];
+    
+    [self pushViewController:appViewController animated:YES];
+
 }
 
 @end
