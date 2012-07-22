@@ -29,6 +29,8 @@
     if (self) {
         _intent = intent;
 		_listViewController = intentListViewController;
+		_listViewController.delegate = self;
+		_listViewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(doCancel:)]
     }
     return self;
 }
@@ -46,6 +48,18 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)intentListViewController:(ISKIntentListViewController *)controller didSelectApp:(NSDictionary *)app 
+{
+	NSURL *url = [ISKIntentManager URLForApp:app withItent:_intent];
+	
+	[self.delegate intentPickerViewController:self didSelectToOpenIntent:_intent withURL:url];
+}
+
+-(void)doCancel:(id)sender 
+{
+	[self.delegate intentPickerViewControllerDidCancel:self];
 }
 
 @end

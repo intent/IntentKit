@@ -19,4 +19,6 @@
 
 - (NSDictionary *)preferredAppForType:(NSString *)type;
 
++ (NSURL *)URLForApp:(NSDictionary *)app withItent:(ISKIntent *)intent;
+
 @end

@@ -34,5 +34,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>ISKCalledIntentTypes</key>
+	<array>
+		<string>share</string>
+	</array>
 </dict>
 </plist>

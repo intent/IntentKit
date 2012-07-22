@@ -9,6 +9,8 @@
 #import "ISKIntentManager.h"
 #import "IntentKit.h"
 
+#define APIURLDomain @"http://fathomless-falls-4877.herokuapp.com"
+
 @interface ISKIntentManager () {
 	NSString *_cachePath;
 }
@@ -86,10 +88,11 @@
 		return [NSArray arrayWithContentsOfFile:cacheFileName];
 	}
 	
-	NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http:///"]];
+	NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:
+								 [NSString stringWithFormat:@"%@/intent?type=%@",APIURLDomain,[type stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]]];
 
-	NSURLResponse *response;
-	NSError *error;
+	NSURLResponse *response = nil;
+	NSError *error = nil;
 	NSData *responseData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
 	
 	NSArray *prefixes = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
@@ -117,7 +120,7 @@
 	
 	for (NSString *prefix in prefixes) {
 		if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:prefix]]) {
-			NSString *requestString = [NSString stringWithFormat:@"http://<domain>/appdata/?type=%@&prefix=%@",
+			NSString *requestString = [NSString stringWithFormat:@"%@/appdata?type=%@&prefix=%@",APIURLDomain,
 									   [type stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
 									   [prefix stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			NSURLRequest *appDataRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:requestString]];

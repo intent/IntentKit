@@ -8,9 +8,11 @@
 
 #import "ISKIntentListViewController.h"
 #import "IntentKit.h"
+#import "ISKIntentManager.h"
 
 @interface ISKIntentListViewController () {
 	ISKIntent *_intent;
+	NSArray *_apps;
 }
 
 @end
@@ -24,6 +26,7 @@
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
 		_intent = intent;
+		_apps = [[ISKIntentManager sharedIntentManager] installedAppsForIntent:intent];
     }
     return self;
 }
@@ -84,12 +87,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return [_apps count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+	NSDictionary *app = [_apps objectAtIndex:indexPath.row];
+    static NSString *CellIdentifier = @"ISKAppCell";
     UITableViewCell *cell;
     
 	if( !(cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]) ){
@@ -97,9 +101,10 @@
 									  reuseIdentifier:CellIdentifier];
 	}
     
-	[[cell textLabel] setText:@"Application"];
+	[[cell textLabel] setText:[app objectForKey:@"name"]];
 	
-	[[cell detailTextLabel] setText:@"Action Description"];
+	[[cell detailTextLabel] setText:[app objectForKey:@"description"]];
+	
 	
     return cell;
 }
@@ -108,7 +113,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+	NSDictionary *app = [_apps objectAtIndex:indexPath.row];
+	
+	[self.delegate intentListViewController:self didSelectApp:app];
 }
 
 @end
