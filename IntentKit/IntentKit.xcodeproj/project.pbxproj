@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8CF02A615BC9FC600C4E4FD /* ISKAppWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A8CF02A415BC9FC600C4E4FD /* ISKAppWebViewController.h */; };
+		A8CF02A715BC9FC600C4E4FD /* ISKAppWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CF02A515BC9FC600C4E4FD /* ISKAppWebViewController.m */; };
 		D965F05515BBE0930065955A /* Resources.c in Sources */ = {isa = PBXBuildFile; fileRef = D965F05415BBE0930065955A /* Resources.c */; };
 		D9EE8CBE15BB27D30005E5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */; };
 		D9EE8CCB15BB3CC00005E5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE8CCA15BB3CC00005E5D7 /* UIKit.framework */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8CF02A415BC9FC600C4E4FD /* ISKAppWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISKAppWebViewController.h; path = IntentKit/ISKAppWebViewController.h; sourceTree = "<group>"; };
+		A8CF02A515BC9FC600C4E4FD /* ISKAppWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISKAppWebViewController.m; path = IntentKit/ISKAppWebViewController.m; sourceTree = "<group>"; };
 		D965F05415BBE0930065955A /* Resources.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Resources.c; sourceTree = "<group>"; };
 		D9EE8CBA15BB27D30005E5D7 /* libIntentKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIntentKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EE8CBD15BB27D30005E5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		D9EE8CAF15BB27D30005E5D7 = {
 			isa = PBXGroup;
 			children = (
+				A8CF02A415BC9FC600C4E4FD /* ISKAppWebViewController.h */,
+				A8CF02A515BC9FC600C4E4FD /* ISKAppWebViewController.m */,
 				D9EE8CBF15BB27D30005E5D7 /* IntentKit */,
 				D9EE8CBC15BB27D30005E5D7 /* Frameworks */,
 				D9EE8CBB15BB27D30005E5D7 /* Products */,
@@ -113,6 +119,7 @@
 				D9EE8CD215BB41D40005E5D7 /* ISKIntentManager.h in Headers */,
 				D9EE8CDA15BB44320005E5D7 /* ISKIntentPickerViewController.h in Headers */,
 				D9EE8CEF15BB48270005E5D7 /* ISKIntentListViewController.h in Headers */,
+				A8CF02A615BC9FC600C4E4FD /* ISKAppWebViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 				D9EE8CDB15BB44320005E5D7 /* ISKIntentPickerViewController.m in Sources */,
 				D9EE8CF015BB48270005E5D7 /* ISKIntentListViewController.m in Sources */,
 				D965F05515BBE0930065955A /* Resources.c in Sources */,
+				A8CF02A715BC9FC600C4E4FD /* ISKAppWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
